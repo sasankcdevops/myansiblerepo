@@ -5,11 +5,10 @@
  - name: I want to Install webserver on ubuntu16
    apt: 
     name: apache2 
-    service: present
+    state: present
  - name: I want to Start webserver
    service: 
     name: apache2
     status: started
 
-    
-       
+
