@@ -1,7 +1,6 @@
 ---
  hosts: all 
- become: yes 
-  gather_facts: yes
+ become: yes
   tasks:
   - name: i want to install webserver on ubuntu16
     apt:
