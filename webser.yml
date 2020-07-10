@@ -11,7 +11,7 @@
   - name: starting webserver
     service: 
      name: apache2
-     status: started
+     state: started
         
 
 
