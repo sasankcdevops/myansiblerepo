@@ -8,7 +8,6 @@
        name: apache2
        state: present
 
-    tasks: 
     - name: starting webserver
       service: 
        name: apache2
