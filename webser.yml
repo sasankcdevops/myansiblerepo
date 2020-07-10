@@ -3,16 +3,16 @@
   become: yes
 
     tasks:
-    name: installing webserver
-     apt:
-      name: apache2
-      state: present
+    - name: installing webserver
+      apt:
+       name: apache2
+       state: present
 
     tasks: 
-    name: starting webserver
-     service: 
-      name: apache2
-      status: started
+    - name: starting webserver
+      service: 
+       name: apache2
+       status: started
         
 
 
