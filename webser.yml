@@ -1,17 +1,17 @@
 ---
 - hosts: all 
   become: yes
+  gather_facts: yes
+  tasks:
+  - name: installing webserver
+    apt:
+     name: apache2
+     state: present
 
-    tasks:
-    - name: installing webserver
-      apt:
-       name: apache2
-       state: present
-
-    - name: starting webserver
-      service: 
-       name: apache2
-       status: started
+  - name: starting webserver
+    service: 
+     name: apache2
+     status: started
         
 
 
