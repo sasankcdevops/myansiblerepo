@@ -2,11 +2,10 @@
 - hosts: all
   become: yes
   tasks: 
-   -name: ping all nodes
-    ping: 
+   - name: ping all nodes
+     ping: 
 
-   -name: install git on ubuntunode1
-    apt:
-     name: git
-     state: present
-     
+   - name: install git on ubuntunode1
+     apt:
+      name: git
+      state: present
