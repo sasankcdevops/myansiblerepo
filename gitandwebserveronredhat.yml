@@ -15,4 +15,4 @@
    - name: start webserver on redhatnode
      service: 
       name: httpd
-      state: present
+      state: started
