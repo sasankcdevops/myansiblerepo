@@ -9,7 +9,6 @@
 
    - name: install webserver on Redhatnote
      yum: 
-      name: apache2
+      name: httpd
       state: present
-      
-            
+
