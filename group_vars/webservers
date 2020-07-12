@@ -2,3 +2,7 @@
 key: value
 webserverpackonubuntu: apache2
 webserverpackonredhat: httpd
+
+
+java8packonubuntu: openjdk-8-jre
+java8packonredhat: java-1.8.0-openjdk
