@@ -2,8 +2,6 @@
 18.222.28.201
 18.222.186.248
 
-[webservers:vars]
-webserverpackonubuntu=apache2
-webserverpackonredhat=httpd
+
 
 
