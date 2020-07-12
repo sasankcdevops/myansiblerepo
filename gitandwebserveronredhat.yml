@@ -15,4 +15,4 @@
    - name: start webserver on redhatnode
      yum: 
       name: httpd
-      state: started
+      state: present
