@@ -1,8 +1,8 @@
 ---
-- hosts: webservers
+- hosts: databaseservers
   become: yes
   tasks:
-  - name: Install webserver on Ubuntu
+  - name: I want to Install webserver on Ubuntu
     apt:
      name: "{{webserverpackonubuntu}}"
      state: present
