@@ -1,5 +1,5 @@
 ---
-- hosts: 18.222.186.248
+- hosts: all
   become: yes
   tasks: 
    - name: install git on redhatnode
@@ -13,6 +13,6 @@
       state: present
 
    - name: start webserver on redhatnode
-     yum: 
+     service: 
       name: httpd
       state: present
