@@ -6,4 +6,10 @@
      yum: 
       name: git
       state: present
-     
+
+   - name: install webserver on Redhatnote
+     yum: 
+      name: apache2
+      state: present
+      
+            
