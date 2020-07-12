@@ -1,10 +1,9 @@
 ---
 - hosts: all
   become: yes
-
-  - name: install git on redhatnode
-    yum: 
-     name: git
-     state: present
-
+  tasks: 
+   - name: install git on redhatnode
+     yum: 
+      name: git
+      state: present
      
