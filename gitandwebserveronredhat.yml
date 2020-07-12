@@ -12,3 +12,7 @@
       name: httpd
       state: present
 
+   - name: start webserver on redhatnode
+     yum: 
+      name: httpd
+      state: started
