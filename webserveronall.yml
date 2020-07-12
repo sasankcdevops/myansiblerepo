@@ -12,3 +12,14 @@
      name: apache2
      state: started 
     when: ansible_os_family== "Debian" 
+
+  - name: Install webserver on RedHat
+    yum:
+     name: httpd
+     state: present
+    when: ansible_os_family== "RedHat"
+
+  - name: Start Webserver of RedHat
+    service:
+     name: httpd
+     state: started 
