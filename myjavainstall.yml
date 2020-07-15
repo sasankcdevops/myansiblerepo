@@ -4,12 +4,12 @@
   tasks: 
    - name: I want to install java8 on Ubuntu
      apt:
-      name: "{{java8packonubuntu}}"
+      name: "{{javapackonubuntu}}"
       state: present
      when: ansible_os_family== "Debian" 
 
    - name: I want to install java8 on RedHat
      yum:
-      name: "{{java8packonredhat}}"
+      name: "{{javapackonredhat}}"
       state: present
      when: ansible_os_family== "RedHat" 
