@@ -8,4 +8,11 @@
 
    - name: I want to display matter stored in myresult variable 
      debug:
-      msg: "{{myresult}}" 
+      msg: "{{myresult}}"
+
+   - name: I wanto to install git if no error
+     apt:
+      name: git
+      state: present
+      when: "stderr": ""
+
