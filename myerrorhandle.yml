@@ -16,5 +16,12 @@
       state: present
      when: myresult.stderr ==""
 
+   - name: I wanto to install tree if no error
+     apt:
+      name: tree
+       state: present
+     when: myresult.stderr !==""
+
+
     
 
