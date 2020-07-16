@@ -1,11 +1,11 @@
 ---
 - hosts: webservers
   become: yes
-  ignore_errors: yes
   tasks:
    - name: Install git
      apt:
       namee: git
+     ignore_errors: yes
     
    - name: tree
      apt:
