@@ -2,11 +2,11 @@
 - hosts: webservers
   become: yes
   vars:
-  mykey1: Devops
-  mykey2: aws
-  mykey3: linux
+   mykey1: Devops
+   mykey2: aws
+   mykey3: linux
 
   tasks: 
   - name: I want to display mykey1
-     debug:
-      msg: "{{mykey1}}"
+    debug:
+     msg: "{{mykey1}}"
