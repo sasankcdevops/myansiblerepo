@@ -11,7 +11,7 @@
     debug:
      msg: "{{mykey1}}"
 
-   - name: I want to display mykey2
+  - name: I want to display mykey2
     debug:
      msg: "{{mykey2}}"
 
