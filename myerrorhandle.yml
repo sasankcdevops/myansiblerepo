@@ -1,5 +1,5 @@
 --- 
-- hosts: ubuntu
+- hosts: webservers
   become: yes
   tasks: 
    - name: I wanto to execute linux commands
