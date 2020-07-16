@@ -19,7 +19,7 @@
    - name: I wanto to install tree if no error
      apt:
       name: tree
-       state: present
+      state: present
      when: myresult.stderr !==""
 
 
