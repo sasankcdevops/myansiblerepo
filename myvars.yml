@@ -10,3 +10,11 @@
   - name: I want to display mykey1
     debug:
      msg: "{{mykey1}}"
+
+   - name: I want to display mykey2
+    debug:
+     msg: "{{mykey2}}"
+
+  - name: I want to display mykey3
+    debug:
+     msg: "{{mykey3}}"

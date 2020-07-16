@@ -4,4 +4,8 @@
   tasks: 
    - name: I wanto to execute linux commands
      command: hostname -f 
-     
+     register: myresult
+
+   - name: I want to display matter stored in myresult variable 
+     debug:
+      msg: "{{myresult}}" 
