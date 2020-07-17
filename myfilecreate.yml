@@ -1,8 +1,8 @@
 ---
 - hosts: webservers
   become: yes
-   - tasks:
-     name: touch file
+  tasks:
+   - name: touch file
      file:   
      path: /home/ubuntu/mytextfilecreated
      state: touch
