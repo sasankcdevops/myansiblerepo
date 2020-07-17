@@ -1,5 +1,5 @@
 --- 
-- hosts: webservers
+- hosts: 18.217.120.188
   become: yes
   tasks: 
    - name: File create
