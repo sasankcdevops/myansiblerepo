@@ -2,7 +2,7 @@
 - hosts: ubuntu 
   become: yes
   gather_facts: yes
-  tasks
+  tasks: 
    - name: I want to install webserver on ubuntuhosts
      apt:
       name: apache2
