@@ -3,16 +3,16 @@
   become: yes
   gather_facts: yes
   tasks: 
-   - name: I want to install webserver on ubuntu16
-     apt:
-      name: apache2
-      state: present
-     notify: startwebserver
-     when: ansible_os_family== "Debian"
+  - name: I want to install webserver on ubuntu16
+    apt:
+     name: apache2
+     state: present
+    notify: startwebserver
+    when: ansible_os_family== "Debian"
 
-     handlers: 
-     - name: startwebserver
-       service: 
-        name: apache2
-        status: started 
+    handlers: 
+    - name: startwebserver
+      service: 
+       name: apache2
+       status: started 
 
