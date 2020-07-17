@@ -1,5 +1,5 @@
 --- 
-- hosts: 18.217.120.188
+- hosts: ubuntu
   become: yes
   tasks: 
    - name: File create
