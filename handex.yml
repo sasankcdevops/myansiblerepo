@@ -1,0 +1,18 @@
+---
+- hosts: ubuntu 
+  become: yes
+  gather_facts: yes
+  tasks
+   - name: I want to install webserver on ubuntuhosts
+     apt:
+      name: apache2
+      state: present
+     notify: startwebserver
+     when: ansible_os_family== "Debian"
+
+     handlers: 
+     - name: startwebserver
+       service: 
+        name: apache2
+        status: started 
+
