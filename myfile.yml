@@ -1,0 +1,6 @@
+--- 
+- hosts: all
+  become: yes
+  - tasks: 
+    name: File create
+      Include: myfilecreate.yml
