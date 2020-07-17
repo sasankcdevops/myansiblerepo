@@ -10,6 +10,13 @@
     notify: startwebserver
     when: ansible_os_family== "Debian"
 
+  - name: copy index file to server 
+    template: 
+     src: index.j2
+     dest: /var/www/html/index.html
+    notify: startwebserver
+    when: ansible_os_family == "Debian" 
+
   handlers: 
   - name: startwebserver
     service: 
