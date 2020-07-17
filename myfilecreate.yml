@@ -1,5 +1,5 @@
 ---
-- hosts: webservers
+ - name: I want to create file on nodes
   file:   
   path: /home/ubuntu/mytextfilecreated
   state: touch
