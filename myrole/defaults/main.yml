@@ -1,2 +1,6 @@
 ---
 # defaults file for myrole
+
+- name: I want to install tree
+  state: present
+  
