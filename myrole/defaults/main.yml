@@ -1,3 +1,4 @@
 ---
 - name: I want to install tree
-  state: present
+  apt: 
+   state: present
